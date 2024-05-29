@@ -1,0 +1,185 @@
+.headerUp{
+    background-color: #942339;
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.bx-chevron-left{
+    color: #fff;
+}
+
+.lineaOsucra{
+    background-color: #5e1325;
+    color: #5e1325;
+}
+
+.espacioBordes{
+    padding: 0 30px;
+}
+
+.contenidoForm{
+    background-color: #d4e0e9;
+    /* border: 1px solid #90a0ad; */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-bottom: 40px;
+    margin-top: 150px;
+    /* margin-left: 10px; */
+}
+
+.logoStand {
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente */
+    margin-top: -100px; /* Ajustar la posición hacia arriba */
+    border-radius: 50%; /* Hacer la imagen redonda */
+    overflow: hidden; /* Asegurar que la imagen respete el borde redondo */
+    width: 210px; /* Ancho de la imagen */
+    height: 200px; /* Altura de la imagen */
+    border: 10px solid #a2afbd; /* Establecer un borde transparente para permitir el gradiente */
+    /*background-image: linear-gradient(to bottom, #d2d7db 50%, #bdc7d0 50%);  Aplicar gradiente lineal */
+    padding-right: calc(var(--bs-gutter-x) * -.5);
+    padding-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+label{
+    color: #838c90;
+    font-weight: bold;
+}
+
+.txtForm{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #a2afbd; /* Por ejemplo, un borde negro en la parte inferior */
+    outline: none; /* Elimina el resplandor al enfocar */
+    background-color: transparent;
+}
+
+/* Estilos para el elemento hr */
+hr {
+    margin-left: -20px;
+    width: 1200px;
+    height: 1px; /* Establece la altura deseada del hr */
+    background-color: #fff; /* Cambia el color a azul, puedes ajustar el color según tu preferencia */
+}
+
+.icono{
+    font-size: 30px;
+    color: #646c6c;
+}
+
+.btnRegistrar {
+    background-color: #942339;
+    color: #fff;
+    font-weight: bold;
+    border: 5px solid #fff;
+    border-radius: 20px;
+    font-size: 16px; /* Tamaño del texto del botón */
+    padding: 10px 20px; /* Ajuste del tamaño del área del botón */
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.centrarContenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 600px; /* ajusta el ancho máximo según tus preferencias */
+    /* Puedes agregar más estilos según tus necesidades */
+}
+
+.bx-dots-vertical-rounded{
+    color: #fff;
+    font-size: 40px;
+    margin-left: -25px;
+    text-decoration: none;
+}
+
+/* Cambiar el color del ícono al pasar el mouse */
+.bx-dots-vertical-rounded:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif /* Cambiar a la fuente de Google Fonts */
+}
+
+
+/* Media Query para dispositivos con un ancho máximo de 767px (puedes ajustar este valor según tu diseño) */
+@media only screen and (max-width: 767px) {
+    .headerUp {
+        font-size: 13px; /* Tamaño más pequeño para dispositivos móviles */
+        padding-bottom: 10px;
+    }
+
+    .headerUp i{
+        padding-top: 10px;
+    }
+
+    .headerUp p{
+        padding-top: 15px;
+    }
+
+    .headerUp i{
+        font-size: 30px;
+    }
+
+    .bx-chevron-left{
+        padding-right: 70px;
+    }
+
+    .bx-dots-vertical-rounded{
+        padding-left: 70px;
+    }
+
+    .lineaOsucra{
+        height: 10px;
+        color: #fff;
+    }
+    
+    .logoStand{
+        margin-top: -50px;
+        width: 110px; 
+        height: 100px;
+        border: 5px solid #a2afbd;
+    }
+
+    hr{
+        width: 400px;
+    }
+
+    .btnRegistrar{
+        font-size: 16px; /* Tamaño del texto del botón */
+        padding: 5px 10px; /* Ajuste del tamaño del área del botón */
+    }
+
+    .contenidoForm{
+        padding-bottom: 600px;
+        padding-left: 20px;
+        margin-top: 80px;
+    }
+    
+
+    .pregunta{
+        margin-top: 20px;
+    }
+
+    /* Ajusta el ancho y centra horizontalmente el elemento select */
+    select.form-select {
+        width: 300px; /* Cambia este valor al ancho deseado */
+        margin-left: auto;
+        margin-right: auto;
+        display: block; /* Asegura que sea un elemento de bloque para aplicar márgenes automáticos */
+    }
+
+    .bx-dots-vertical-rounded{
+        margin-top: 10px;
+    }
+
+}

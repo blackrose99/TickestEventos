@@ -1,0 +1,39 @@
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.custom-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    text-align: center; /* Centrar la imagen dentro de la columna */
+}
+
+.custom-card-img {
+    max-width: 50%; /* Establecer un tamaño máximo para la imagen */
+    height: auto;
+}
+
+    #carouselBasicExample img {
+        height: 400px; /* Establece la altura deseada para todas las imágenes */
+        object-fit: cover; /* Ajusta la imagen manteniendo las proporciones y recortando según sea necesario */
+    }
+
+
+
+@media (max-width: 767px) {
+    .custom-col {
+        flex: 0 0 100%;
+        max-width: 50%;
+    }
+
+    /* Centrar el carrusel en vista móvil */
+    #carouselBasicExample {
+        margin: 0 auto;
+    }
+}

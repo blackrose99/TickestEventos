@@ -1,0 +1,263 @@
+.headerUp{
+    background-color: #942339;
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.lineaOsucra{
+    background-color: #5e1325;
+    color: #5e1325;
+}
+
+.contenidoForm{
+    background-color: #90a0ad;
+    /* border: 1px solid #90a0ad; */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-bottom: 10px;
+    margin-top: 150px;
+}
+
+.bx-chevron-left{
+    color: #fff;
+}
+
+.logoUser {
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente */
+    margin-top: -100px; /* Ajustar la posición hacia arriba */
+    border-radius: 50%; /* Hacer la imagen redonda */
+    overflow: hidden; /* Asegurar que la imagen respete el borde redondo */
+    width: 210px; /* Ancho de la imagen */
+    height: 200px; /* Altura de la imagen */
+    border: 10px solid #a2afbd; /* Establecer un borde transparente para permitir el gradiente */
+
+}
+
+
+/* Media Query para dispositivos con un ancho máximo de 767px (puedes ajustar este valor según tu diseño) */
+@media only screen and (max-width: 767px) {
+    .headerUp {
+        font-size: 13px; /* Tamaño más pequeño para dispositivos móviles */
+        padding-bottom: 10px;
+    }
+
+    .headerUp i{
+        padding-top: 10px;
+    }
+
+    .headerUp p{
+        padding-top: 15px;
+    }
+
+    .headerUp i{
+        font-size: 30px;
+    }
+
+    .bx-chevron-left{
+        padding-right: 70px;
+    }
+
+    .bx-dots-vertical-rounded{
+        padding-left: 70px;
+    }
+
+    .lineaOsucra{
+        height: 10px;
+        color: #fff;
+    }
+
+    .contenidoForm{
+        margin-top: 100px;
+    }
+
+    .logoUser{
+        margin-top: -50px;
+        width: 110px; 
+        height: 100px;
+        border: 10px solid #a2afbd; /* Establecer un borde transparente para permitir el gradiente */
+    }
+}
+
+/* Estilos para los campos de registro y botones */
+.registration-form {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.registration-form input,
+.registration-form select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.registration-form select {
+    color: #555;
+}
+
+.registration-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.register-button {
+    background-color: #942339; /* Color de registro */
+}
+
+.login-button {
+    background-color: #90a0ad; /* Color de ingreso (gris) */
+}
+
+
+/* Estilos para hacerlo responsive */
+.registration-form {
+    margin-top: 50px;
+    padding: 0 20px; /* Añadir espaciado a los lados */
+}
+
+.registration-form .form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilos específicos para los botones */
+.register-button {
+    background-color: #942339;
+}
+
+.login-button {
+    background-color: #828080;
+    margin-top: 10px; /* Añadir espacio entre los botones */
+}
+
+/* Media Query para dispositivos con un ancho máximo de 767px (puedes ajustar este valor según tu diseño) */
+@media only screen and (max-width: 767px) {
+    .headerUp {
+        font-size: 20px;
+    }
+
+    .bx-chevron-left,
+    .bx-dots-vertical-rounded {
+        font-size: 25px;
+    }
+
+    .lineaOsucra {
+        height: 5px;
+    }
+
+    .contenidoForm {
+        margin-top: 30px;
+        padding-bottom: 0px;
+    }
+
+    .logoUser {
+        margin-top: -30px;
+        width: 80px;
+        height: 80px;
+        border-width: 3px;
+    }
+
+    .registration-form input,
+    .registration-form select {
+        width: calc(100% - 20px); /* Hacer que los campos de entrada ocupen el ancho menos el espaciado lateral */
+    }
+
+    .register-button,
+    .login-button {
+        width: calc(50% - 10px); /* Ajustar el ancho de los botones al 50% del contenedor con espaciado entre ellos */
+        margin-top: 10px;
+    }
+}
+
+/* Estilos mejorados para los campos de formulario */
+.registration-form input,
+.registration-form select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Agregar transición para los cambios */
+}
+
+/* Efecto de resaltado en los campos al recibir el foco */
+.registration-form input:focus,
+.registration-form select:focus {
+    outline: none;
+    border-color: #942339; /* Cambiar el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(148, 35, 57, 0.5); /* Agregar sombra al enfocar */
+}
+
+/* Estilos para los botones mejorados */
+.registration-form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Agregar transición para los cambios */
+}
+
+/* Efecto de cambio de color al pasar el cursor sobre los botones */
+.register-button:hover,
+.login-button:hover {
+    opacity: 0.8; /* Reducir la opacidad al pasar el cursor */
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño al pasar el cursor */
+}
+
+/* Estilos mejorados para el botón de Ingresar */
+.login-button {
+    background-color: #90a0ad; /* Color del botón de Ingresar */
+    margin-top: 10px; /* Espaciado superior */
+    padding: 12px; /* Aumentar el espacio interno */
+    border: 1px solid #90a0ad; /* Borde del botón */
+    color: #fff; /* Color del texto */
+    font-weight: bold; /* Añadir negrita al texto */
+    text-decoration: none; /* Eliminar subrayado por defecto */
+    display: inline-block; /* Hacer que el botón sea inline-block */
+    width: 100%; /* Ajustar al ancho completo */
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: background-color 0.3s, color 0.3s; /* Transición al pasar el cursor */
+}
+
+/* Efecto de cambio de color al pasar el cursor sobre el botón */
+.login-button:hover {
+    background-color: #5e1325; /* Cambiar color de fondo al pasar el cursor */
+    border-color: #5e1325; /* Cambiar color del borde al pasar el cursor */
+    color: #fff; /* Cambiar color del texto al pasar el cursor */
+}
+
+/* Estilos para los campos de formulario con sombras */
+.registration-form input,
+.registration-form select {
+    width: 100%;
+    margin-bottom: 15px; /* Aumentar el espacio entre campos */
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregar sombra para resaltar */
+}
+
+/* Estilos para el último campo (evita la sombra en la parte inferior) */
+.registration-form input:last-child,
+.registration-form select:last-child {
+    box-shadow: none; /* Eliminar la sombra en el último campo */
+}
+
+/* Reducir el espacio en gris después del formulario */
+.container-fluid .contenidoForm {
+    box-shadow: 0 0 5px rgba(148, 35, 57, 0.5); /* Agregar sombra al enfocar */
+}
+

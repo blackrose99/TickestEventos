@@ -1,0 +1,125 @@
+.headerUp {
+    background-color: #942339;
+    color: #fff !important; /* Color del texto blanco */
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center; /* Centrar el texto */
+    padding: 20px 0; /* Agregar espacio interno superior e inferior */
+}
+
+.lineaOsucra {
+    background-color: #5e1325;
+    height: 10px;
+    margin-bottom: 20px; /* Añadir margen inferior para separar de la sección siguiente */
+}
+.contenidoCard{
+    background-color: #d4e0e9;
+    /* border: 1px solid #90a0ad; */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-bottom: 500px;
+}
+
+.col-6 {
+    padding: 15px; /* Agrega algún espacio alrededor de las imágenes */
+}
+
+.logoEmpresa {
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente */
+    margin-top: 10px; /* Ajustar la posición hacia arriba */
+    border-radius: 50%;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    border: 10px solid transparent;
+    background-image: linear-gradient(to bottom, #942339 50%, #942339 50%);
+}
+.watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Para que la marca de agua no interfiera con los eventos del mouse */
+}
+
+.watermark img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bx-dots-vertical-rounded{
+    color: #fff;
+    font-size: 40px;
+    margin-left: -25px;
+}
+
+/* Cambiar el color del ícono al pasar el mouse */
+.bx-dots-vertical-rounded:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Media Query para dispositivos con un ancho máximo de 767px (puedes ajustar este valor según tu diseño) */
+@media only screen and (max-width: 767px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .headerUp {
+        font-size: 11px; /* Tamaño más pequeño para dispositivos móviles */
+        padding-bottom: 10px;
+    }
+    
+    .headerUp i{
+        padding-top: 10px;
+    }
+
+    .headerUp p{
+        padding-top: 15px;
+    }
+
+    .headerUp i{
+        font-size: 30px;
+    }
+
+    .bx-chevron-left{
+        padding-right: 70px;
+    }
+
+    .bx-dots-vertical-rounded{
+        padding-left: 70px;
+    }
+
+    .lineaOsucra{
+        height: 10px;
+        color: #fff;
+    }
+    .logoEmpresa {
+        width: 120px;
+        height: 120px;
+        border: 5px solid transparent;
+    }
+    
+    .watermark {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none; /* Para que la marca de agua no interfiera con los eventos del mouse */
+        width: 170px; /* Igualar al ancho del logo */
+        height: 170px; /* Igualar a la altura del logo */
+    }
+    
+    .watermark img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Para asegurarse de que la imagen cubra completamente el contenedor manteniendo la relación de aspecto */
+        display: block;
+    }
+    
+
+}

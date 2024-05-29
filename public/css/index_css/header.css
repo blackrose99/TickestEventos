@@ -1,0 +1,90 @@
+
+        /* Estilos para la línea ROJA */
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Cambiar a la fuente de Google Fonts */
+        }
+
+        .navbar-line {
+            background-color: #942339;
+            padding: 10px;
+            display: flex;
+            justify-content: center; /* Centra los elementos horizontalmente */
+            align-items: center;
+            flex-wrap: wrap; /* Para que los elementos se envuelvan en dispositivos pequeños */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra al encabezado */
+        }
+
+        /* Estilo para los botones en la línea ROJA*/
+        .navbar-line .btn-custom {
+            color: #fff;
+            font-size: 13px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            border: 2px solid transparent; /* Agrega un borde transparente a los botones */
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            transition: all .3s;
+            white-space: nowrap;
+            text-decoration: none; /* Quitar la línea debajo del texto */
+            margin: 5px; /* Espaciado entre los botones */
+        }
+
+        .navbar-line .btn-custom:hover {
+            border-color: #fff; /* Cambia el color del borde al pasar el cursor */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Agrega una sombra al pasar el cursor */
+        }
+
+        .navbar-line button span {
+            position: absolute;
+            display: block;
+        }
+
+        .navbar-line a {
+            color: white !important; /* Establece el color del enlace a blanco */
+        }
+
+        .navbar-line .navbar-toggler-icon {
+            background-color: white; /* Establece el color del ícono del botón de navegación a blanco */
+        }
+
+        .navbar-line .navbar-toggler {
+            border: none; /* Elimina el borde del botón de navegación */
+        }
+
+        /* Estilo específico para el enlace de Logout */
+        .navbar-line .dropdown-item.logout-link {
+            color: black !important; /* Establece el color del enlace Logout a negro */
+        }
+
+        .bx-dots-vertical-rounded{
+            color: #fff;
+            font-size: 20px;
+            margin-left: -25px;
+            text-decoration: none;
+        }
+        
+        /* Cambiar el color del ícono al pasar el mouse */
+        .bx-dots-vertical-rounded:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 767px) {
+            .navbar-line {
+                flex-direction: column; /* Cambia la dirección del eje principal a columna en dispositivos pequeños */
+                height: auto; /* Altura automática en dispositivos pequeños */
+            }
+
+            .navbar-line .btn-custom {
+                margin-bottom: 10px; /* Agrega margen inferior entre los botones en dispositivos pequeños */
+                text-align: center; /* Centra los botones en dispositivos pequeños */
+            }
+
+            .logout-btn-container {
+                margin-top: 10px; /* Ajusta el espacio entre el botón de logout y otros botones */
+            }
+        }
